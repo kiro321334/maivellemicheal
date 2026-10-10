@@ -92,6 +92,13 @@ export const services = [
     "#dde8d0",
     "img",
   ],
+    [
+    "BASIC VIDEO EDITING",
+    "Clean, on-brand short-form edits for reels and motion posts, with smooth cuts, text overlays, simple transitions and polished video covers.",
+    ["Reels Edits", "Motion Posts", "Video Covers"],
+    "#e4dff2",
+    "video",
+  ],
 ];
 export const tools = [
   [
