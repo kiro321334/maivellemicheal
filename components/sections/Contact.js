@@ -37,6 +37,15 @@ export default function Contact() {
           Start your project on WhatsApp
         </a>
 
+        <a
+          href="mailto:maivellemicheal25@gmail.com?subject=Design%20Project%20Inquiry"
+          className="btn-c relative z-10 mt-4 flex w-full items-center justify-center gap-2 py-5 text-white bg-black/20 hover:bg-black/30 cursor-pointer"
+          aria-label="Send an email to Maivelle Micheal"
+        >
+          <Icon n="mail" size={20} />
+          <span>Send me an email</span>
+        </a>
+
         <p className="mx-auto mt-6 flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs">
           <i className="blink h-2 w-2 rounded-full bg-[#8fc08f]" />
           Available for new projects
