@@ -46,21 +46,6 @@ export default function Contact() {
           <p className="text-[11px] font-bold uppercase tracking-[.2em] text-white/60">
             Follow my work
           </p>
-          <ul className="mt-4 flex flex-wrap justify-center gap-2">
-            {socials.map(([label, href]) => (
-              <li key={label}>
-                <a
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer me"
-                  aria-label={`${site.name} on ${label}`}
-                  className="inline-block rounded-full border border-white/25 bg-white/5 px-5 py-2.5 text-sm font-bold transition hover:border-sun hover:bg-white/10 hover:text-sun"
-                >
-                  {label}
-                </a>
-              </li>
-            ))}
-          </ul>
         </nav>
 
         <footer className="mt-10 border-t border-white/15 pt-6">
