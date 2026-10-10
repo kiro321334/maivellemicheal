@@ -1,4 +1,5 @@
 export const nav = [
+  ["brands", "Brands"],
   ["work", "Work"],
   ["services", "Services"],
   ["tools", "Tools"],
@@ -28,100 +29,39 @@ export const workFilters = [
   "Branding",
   "Commercial",
 ];
-export const industries = [
-  "All",
-  "Beauty",
-  "Aesthetics",
-  "Skincare",
-  "Hospitality",
-  "Product",
-];
+export const industries = ["All", "clinic", "Aesthetics", "ads"];
 const sh = ["#f8e4a0", "#fbd9c6", "#f6d1cf", "#dde8d0"];
-const p = (i, id, title, kind, industry, size, slides, desc, deliver) => ({
+const p = (i, id, title, industry, size, slides) => ({
   id,
   no: String(i + 1).padStart(2, "0"),
   title,
-  kind,
   industry,
   size,
   slides,
-  desc,
-  deliver,
-  tools: ["Photoshop", "Illustrator"],
   shadow: sh[i % 4],
-  year: "2025",
   cover: `/work/${id}/cover.jpg`,
   images: Array.from({ length: slides }, (_, k) => `/work/${id}/${k + 1}.jpg`),
 });
 const S = "1080 × 1350",
   Q = "1080 × 1080";
 export const projects = [
-  p(
-    0,
-    "lumiere-glow-serum",
-    "Lumière Glow Serum",
-    "Social Media",
-    "Beauty",
-    S,
-    3,
-    "A warm, editorial social campaign for a glow serum: hero product shots, retouched textures and a consistent amber palette.",
-    ["Post set", "Story templates", "Retouched product images"],
-  ),
-  p(
-    1,
-    "aura-clinic-campaign",
-    "Aura Clinic Campaign",
-    "Advertising",
-    "Aesthetics",
-    S,
-    3,
-    "High-converting ad creatives and a landing-page visual system for an aesthetic clinic’s seasonal offers.",
-    ["Social ads", "Digital banners", "Offer visuals"],
-  ),
-  p(
-    2,
-    "al-nahil",
-    "Al Nahil Branding",
-    "Branding",
-    "Skincare",
-    S,
-    6,
-    "A complete botanical skincare identity: logo system, color palette, typography and brand guidelines.",
-    ["Logo system", "Color palette", "Brand guidelines"],
-  ),
-  p(
-    3,
-    "maison-dor-menu",
-    "Maison D’or Menu Visuals",
-    "Commercial",
-    "Hospitality",
-    S,
-    3,
-    "Luxury treatment menu and in-store print collateral with delicate typography and gold accents.",
-    ["Treatment menu", "Flyers", "Key visuals"],
-  ),
-  p(
-    4,
-    "gig",
-    "Gig Campaign",
-    "Social Media",
-    "Skincare",
-    S,
-    3,
-    "A bright summer sun-protection guide with carousels, tips and product highlights.",
-    ["Carousel", "Highlight covers", "Content kit"],
-  ),
+  p(0, "lumiere-glow-serum", "Aesthetic Clinic", "clinic", S, 3),
+  p(1, "aura-clinic-campaign", "Aesthetic Clinic", "clinic", S, 3),
+  p(2, "al-nahil", "Al Nahil Branding", "clinic", S, 6),
+  p(3, "maison-dor-menu", "Paris Clinic Branding", "clinic", S, 3),
+  p(4, "gig", "Dr.hind ads", "Aesthetics", S, 3),
   p(
     5,
     "elixir-botanical-launch",
-    "Élixir Botanical Launch",
-    "Commercial",
-    "Product",
+    "Instgram Aesthetic Clinic ads",
+    "clinic",
     Q,
     3,
-    "Launch visuals for a botanical elixir: product ads, app mockups and campaign key visuals.",
-    ["Product ads", "Key visuals", "Launch kit"],
   ),
+  p(6, "burak", "Burak", "ads", Q, 9),
+  p(7, "clinic-auth", "E,MED", "clinic", Q, 4),
+  p(8, "nagaa", "Instgram Aesthetic Clinic ads", "Aesthetics", Q, 6),
+  p(9, "spier", "Spier", "ads", Q, 7),
 ];
 export const services = [
   [
@@ -185,22 +125,7 @@ export const steps = [
     "Iterative fine-tuning based on your feedback followed by organized export of print and web assets in all required formats.",
   ],
 ];
-export const reviews = [
-  [
-    "SA",
-    "Dr. Salma A.",
-    "Founder · Radiant Aesthetics Clinic",
-    "Maivelle completely revamped our aesthetic clinic’s Instagram feed. Her eye for warm, clean beauty visual language made our bookings jump significantly within the first month.",
-    "#f8e4a0",
-  ],
-  [
-    "LM",
-    "Layla Mansoor",
-    "Marketing Director · Bloom Botanicals",
-    "Fast turnaround, exceptionally organized Illustrator source files, and a rare sensitivity to delicate skincare branding. Working with Maivelle is effortlessly seamless.",
-    "#fbd9c6",
-  ],
-];
+
 export const faqs = [
   [
     "What do you need to start a project?",

@@ -39,34 +39,7 @@ export default function ProjectModal({ p, onClose }) {
 
         <div className="flex-1 overflow-y-auto p-5">
           <h2 className="text-3xl font-bold">{p.title}</h2>
-          <p className="mt-1 text-sm text-mute">
-            {p.kind} · {p.industry} · {p.year}
-          </p>
-          <p className="mt-4 text-base leading-relaxed text-ink/80">{p.desc}</p>
 
-          <div className="mt-5 grid grid-cols-2 gap-3 text-sm">
-            <div className="rounded-2xl bg-sand p-4">
-              <p className="text-[10px] font-bold uppercase tracking-widest text-rust">
-                Tools
-              </p>
-              <p className="mt-1 font-bold">{p.tools.join(" · ")}</p>
-            </div>
-          </div>
-
-          <p className="mt-5 text-[10px] font-bold uppercase tracking-widest text-rust">
-            Deliverables
-          </p>
-          <ul className="mt-2 flex flex-wrap gap-2">
-            {p.deliver.map((d) => (
-              <li key={d} className="pill">
-                {d}
-              </li>
-            ))}
-          </ul>
-
-          <p className="mt-6 text-[10px] font-bold uppercase tracking-widest text-rust">
-            Inside this folder · {p.images.length} images
-          </p>
           <div className="mt-3 grid gap-4 sm:grid-cols-2">
             {p.images.map((s, i) => (
               <div

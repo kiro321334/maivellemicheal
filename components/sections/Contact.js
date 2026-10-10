@@ -2,17 +2,9 @@ import { site } from "@/lib/site";
 import Icon from "@/components/ui/Icon";
 
 const msg = encodeURIComponent(
-  "Hi Maivelle, I'd like to start a design project for my brand."
+  "Hi Maivelle, I'd like to start a design project for my brand.",
 );
 const wa = `${site.whatsapp}?text=${msg}`;
-
-const socials = [
-  ["Instagram", site.instagram],
-  ["Behance", site.behance],
-  ["LinkedIn", site.linkedin],
-  ["TikTok", site.tiktok],
-  ["Pinterest", site.pinterest],
-];
 
 export default function Contact() {
   return (
@@ -45,14 +37,6 @@ export default function Contact() {
           Start your project on WhatsApp
         </a>
 
-        <a
-          href={`mailto:${site.email}`}
-          className="btn mt-3 w-full border border-white/25 py-4 hover:bg-white/10"
-        >
-          <Icon n="mail" size={18} />
-          Or email me
-        </a>
-
         <p className="mx-auto mt-6 flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs">
           <i className="blink h-2 w-2 rounded-full bg-[#8fc08f]" />
           Available for new projects
@@ -82,7 +66,7 @@ export default function Contact() {
         <footer className="mt-10 border-t border-white/15 pt-6">
           <p className="font-bold">{site.name}</p>
           <p className="mt-2 text-xs text-white/80">
-            © 2026 {site.name} · All Rights Reserved
+            © 2022 {site.name} · All Rights Reserved
           </p>
           <a href="#top" className="mt-4 inline-block text-xs text-sun">
             Back to top ↑
