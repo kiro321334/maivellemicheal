@@ -5,7 +5,11 @@ const msg = encodeURIComponent(
   "Hi Maivelle, I'd like to start a design project for my brand.",
 );
 const wa = `${site.whatsapp}?text=${msg}`;
-
+const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+  site.email,
+)}&su=${encodeURIComponent("Design Project Inquiry")}&body=${encodeURIComponent(
+  "Hi Maivelle, I'd like to start a design project for my brand.",
+)}`;
 export default function Contact() {
   return (
     <section
@@ -38,9 +42,10 @@ export default function Contact() {
         </a>
 
         <a
-          href="mailto:maivellemicheal25@gmail.com?subject=Design%20Project%20Inquiry"
-          className="btn-c relative z-10 mt-4 flex w-full items-center justify-center gap-2 py-5 text-white bg-black/20 hover:bg-black/30 cursor-pointer"
-          aria-label="Send an email to Maivelle Micheal"
+          href={gmailUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-c mt-4 flex w-full items-center justify-center gap-2 py-5 text-white bg-black/20 hover:bg-black/30"
         >
           <Icon n="mail" size={20} />
           <span>Send me an email</span>
