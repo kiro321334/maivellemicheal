@@ -45,7 +45,7 @@ const p = (i, id, title, industry, size, slides) => ({
 const S = "1080 × 1350",
   Q = "1080 × 1080";
 export const projects = [
-  p(0, "lumiere-glow-serum", "Aesthetic Clinic", "clinic", S, 3),
+  p(0, "lumiere-glow-serum", "Aesthetic Clinic", "clinic", S, 10),
   p(1, "aura-clinic-campaign", "Aesthetic Clinic", "clinic", S, 3),
   p(2, "al-nahil", "Al Nahil Branding", "clinic", S, 6),
   p(3, "maison-dor-menu", "Paris Clinic Branding", "clinic", S, 3),
@@ -61,7 +61,7 @@ export const projects = [
   p(6, "burak", "Burak", "ads", Q, 9),
   p(7, "clinic-auth", "E,MED", "clinic", Q, 4),
   p(8, "nagaa", "Instgram Aesthetic Clinic ads", "Aesthetics", Q, 6),
-  p(9, "spier", "Spier", "ads", Q, 7),
+  p(9, "spier", "Spier", "ads", Q, 5),
 ];
 export const services = [
   [
